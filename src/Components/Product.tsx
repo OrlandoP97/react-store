@@ -9,6 +9,8 @@ import {
   Button,
   HStack,
 } from "@chakra-ui/react";
+import { AiOutlineWhatsApp } from 'react-icons/all';
+import { Link } from "react-router-dom";
 
 import { useParams, useLocation } from "react-router-dom";
 
@@ -45,9 +47,11 @@ export default function Product() {
               </Tag>
               <Text mt={3}>{state.description}</Text>
               <HStack mt={4}>
-                <Button w="xs" size="sm" colorScheme="purple">
-                  Buy Now
+               
+                <Button leftIcon={<AiOutlineWhatsApp/>} w="xs" size="sm" colorScheme="whatsapp">
+                  Write us to buy now!
                 </Button>
+            
                 <Button w="xs" size="sm">
                   Share Product
                 </Button>
